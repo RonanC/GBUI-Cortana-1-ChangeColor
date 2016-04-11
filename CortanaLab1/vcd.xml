@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+  <CommandSet xml:lang="en-uk" Name="ColorChangerVcd">
+    <CommandPrefix>Color</CommandPrefix>
+    <Example>Color green</Example>
+
+    <Command Name="changeColor">
+      <Example>Color green</Example>
+      <ListenFor>{command}</ListenFor>
+      <Feedback>Changing color...</Feedback>
+      <Navigate Target="MainPage.xaml"/>
+    </Command>
+
+    <PhraseList Label="colors">
+      <Item>red</Item>
+      <Item>green</Item>
+      <Item>blue</Item>
+    </PhraseList>
+
+  </CommandSet>
+</VoiceCommands>
